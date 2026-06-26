@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on005185-blue)](https://doi.org/10.82901/nemar.on005185)
+
 EESM19: Ear-EEG Sleep Monitoring data set
 
 This data set was collected as part of development and quality assessment of the ear-EEG as a sleep monitoring platform. Data collection took place between 2018 and 2020. First publication was in 2019 (https://doi.org/10.1038/s41598-019-53115-3), hence the '19' in the name.
