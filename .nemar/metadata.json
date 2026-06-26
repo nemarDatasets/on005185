@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Ear-EEG Sleep Monitoring 2019 (EESM19)",
+  "description": "The Ear-EEG Sleep Monitoring 2019 (EESM19) dataset comprises polysomnographic and ear-EEG recordings collected from 20 subjects over multiple nights in home settings between 2018 and 2020. The dataset includes concurrent measurements from partial PSG (EEG, EOG, chin EMG), ear-EEG electrodes, wrist-worn actigraphy, and subjective sleep quality assessments. This resource supports the development and validation of ear-EEG as a practical sleep monitoring platform.",
+  "methods_description": "Data collection involved 20 subjects sleeping in their own homes. Part A consisted of 4 nights per subject with simultaneous partial PSG (EEG, EOG, chin EMG electrodes), ear-EEG, and wrist-worn GENEactive actigraph recordings. Part B included 10 of these subjects completing an additional 12 nights wearing only ear-EEG, actigraph, and a single EOG electrode. Each night was recorded as a separate session. Electrode quality was assessed using a standardized electrode test protocol involving jaw clenching, eye opening/closing, and horizontal eye movements. Post-collection, faulty electrodes with signal leakage were identified and marked as NaN in the processed data.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -13,12 +15,36 @@
     },
     "Yousef Rezaei Tabar": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005185.v1.0.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "sleep monitoring"
+    },
+    {
+      "term": "ear-EEG"
+    },
+    {
+      "term": "Polysomnography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
+    },
+    {
+      "term": "Actigraphy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D056044"
+    },
+    {
+      "term": "electrooculography"
+    },
+    {
+      "term": "Electromyography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004576"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005185",
       "identifier_type": "URL",
@@ -38,16 +64,21 @@
       "identifier": "10.3389/fncom.2021.565244",
       "identifier_type": "DOI",
       "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005185.v1.0.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Neuroimaging Dataset",
   "modalities": [
     "beh",
     "eeg"
   ],
-  "resource_type_specific": "Neuroimaging Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "832.4 GB (2333 files)"
   ],
   "formats": [
     ".Poly5",
@@ -71,33 +102,8 @@
     ".set",
     ".tsv",
     ".txt",
-    ".xses"
+    ".xses",
+    ".yml"
   ],
-  "description": "The Ear-EEG Sleep Monitoring 2019 (EESM19) dataset comprises polysomnographic and ear-EEG recordings collected from 20 subjects during sleep studies conducted between 2018 and 2020. The dataset includes 4 nights of full polysomnography (EEG, EOG, chin EMG) combined with ear-EEG and actigraphy for all subjects, with an additional 12 nights of ear-EEG-only recordings for 10 subjects. Accompanying data include sleep quality questionnaires, standardized sleep diaries, and electrode quality assessments, providing a comprehensive resource for validating ear-EEG as a practical sleep monitoring platform.",
-  "methods_description": "Data collection involved subjects sleeping in their own homes wearing ear-EEG devices, wrist-worn GENEactive actigraphs recording 3-axis acceleration and environmental data, and partial polysomnography (EEG, EOG, chin EMG) during initial sessions. Electrode quality was assessed using standardized video-guided tasks (jaw clenching, eye movements). Synchronization between actigraphy and EEG was achieved through coordinated shaking of devices at recording onset. Faulty electrodes with signal leakage were identified and marked as NaN in processed data.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "sleep monitoring"
-    },
-    {
-      "term": "ear-EEG"
-    },
-    {
-      "term": "Polysomnography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
-    },
-    {
-      "term": "Actigraphy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D056044"
-    },
-    {
-      "term": "wearable sensors"
-    }
-  ],
-  "source_hash": "45573d77bfe68c5f2f8a72e8b081609358ee77a55f71c058b4279ba4b60e2d8f"
+  "source_hash": "5534912309f7dcd9c539fd51654df346e4970e89c9131e4f6e3a158ca0156d08"
 }
