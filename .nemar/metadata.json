@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Ear-EEG Sleep Monitoring 2019 (EESM19)",
-  "description": "The Ear-EEG Sleep Monitoring 2019 (EESM19) dataset comprises polysomnographic and ear-EEG recordings collected from 20 subjects over multiple nights in home settings between 2018 and 2020. The dataset includes concurrent measurements from partial PSG (EEG, EOG, chin EMG), ear-EEG electrodes, wrist-worn actigraphy, and subjective sleep quality assessments. This resource supports the development and validation of ear-EEG as a practical sleep monitoring platform.",
-  "methods_description": "Data collection involved 20 subjects sleeping in their own homes. Part A consisted of 4 nights per subject with simultaneous partial PSG (EEG, EOG, chin EMG electrodes), ear-EEG, and wrist-worn GENEactive actigraph recordings. Part B included 10 of these subjects completing an additional 12 nights wearing only ear-EEG, actigraph, and a single EOG electrode. Each night was recorded as a separate session. Electrode quality was assessed using a standardized electrode test protocol involving jaw clenching, eye opening/closing, and horizontal eye movements. Post-collection, faulty electrodes with signal leakage were identified and marked as NaN in the processed data.",
+  "description": "This dataset comprises multi-night ear-EEG and polysomnography (PSG) recordings collected between 2018 and 2020 to develop and validate ear-EEG as a home-based sleep monitoring platform. Twenty subjects were recorded across four nights with partial PSG, ear-EEG, and actigraphy, while ten of these subjects continued for an additional twelve nights using only ear-EEG, actigraphy, and a single EOG electrode. Supplementary behavioral data include nightly comfort questionnaires, sleep diaries, and actigraphy recordings, providing a rich resource for studying sleep physiology and wearable EEG signal quality.",
+  "methods_description": "Subjects slept at home wearing ear-EEG electrodes alongside partial PSG (EEG, EOG, chin EMG) for the first four nights, and a subset continued for twelve additional nights with ear-EEG, actigraphy, and a single EOG electrode. Actigraphy was recorded with wrist-worn GENEactiv devices measuring 3-axis acceleration, temperature, light, and button presses. Each night, participants completed a comfort questionnaire and a sleep diary, and performed an electrode quality test involving jaw clenching, eye movements, and open/closed eyes. Data were minimally preprocessed; faulty electrodes with signal leakage were identified and set to NaN in the .set files.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -20,10 +20,9 @@
       "term": "EEG"
     },
     {
-      "term": "sleep monitoring"
-    },
-    {
-      "term": "ear-EEG"
+      "term": "Sleep",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
     },
     {
       "term": "Polysomnography",
@@ -36,22 +35,15 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D056044"
     },
     {
-      "term": "electrooculography"
+      "term": "ear-EEG"
     },
     {
-      "term": "Electromyography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004576"
+      "term": "wearable sensors"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005185",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005185",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -69,6 +61,11 @@
       "identifier": "10.18112/openneuro.ds005185.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005185",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
